@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "jldEgNbzX2HK0W7IkLakPlGYCzleOpnM9K+FHaElD9wZ2RueHPWKzfg7aEdmPNapgCQompVATs0ofHxy9NIU1g==",
+  "success": true,
+  "projectFilePath": "C:\\Apache24\\htdocs\\CORSdecode2\\service\\service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\joeyg\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\joeyg\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\joeyg\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\joeyg\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\joeyg\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\joeyg\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

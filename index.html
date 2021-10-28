@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+
+    </div>
+    
+
+
+    <script>
+        const RSS_URL = 'https://localhost:5001/Rss';
+        function reqListener() {
+            fetch(RSS_URL)
+                .then(response => response.text())
+                .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+                .then(data => {
+                    document.getElementById("main").innerHTML = data.children[0].children[0].textContent;
+                })
+                
+                /*.then(data => {
+                    console.log(data);
+                    const items = data.querySelectorAll("item");
+                    const images = data.querySelectorAll("image");
+                    let html = ``;
+                    images.forEach(el => {
+                        html += `
+                        <intro>
+                            <a href="${el.querySelector("link").innerHTML}">
+                                <img src="${el.querySelector("url").innerHTML}" alt="">
+                            </a>
+                            ${el.querySelector("title").innerHTML}<hr>
+                        </intro>
+                        `
+                    })
+                    items.forEach(el => {
+                        html += `
+                        <article>
+                            <h2>
+                                <a href="${el.querySelector("link").innerHTML}">
+                                    ${el.querySelector("title").innerHTML}
+                                </a>
+                            </h2>
+                            <p id="description">
+                                ${el.querySelector("description").innerHTML}
+                            </p><br>
+                            <p id="date">
+                                ${el.querySelector("pubDate").innerHTML}
+                            </p>
+                        </article>
+                        `;
+                    });
+                    document.getElementById("main").insertAdjacentHTML("beforeend", html);
+                });*/
+
+
+        }
+        var oReq = new XMLHttpRequest();
+        oReq.addEventListener("load", reqListener);
+        oReq.open("GET", RSS_URL);
+        oReq.send(); 
+    </script>
+</body>
+</html>
